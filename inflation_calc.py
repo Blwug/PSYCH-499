@@ -2,14 +2,14 @@ import random as rd
 
 def inflation(inflate, years, tot):
     tot = (inflate/100) * years
-    print ("total inflation amount is",tot,"given", years, "years")
+    #print ("total inflation amount is",tot,"given", years, "years")
     return tot
 
 def converted_vals(org_money, moon, new_tot, currency):
     new_tot = org_money * moon 
     new_tot = org_money + new_tot
     new_tot = new_tot * currency 
-    print("We changed the original value from", org_money, "to", new_tot)
+    #print("We changed the original value from", org_money, "to", new_tot)
     return (new_tot)
 
 
