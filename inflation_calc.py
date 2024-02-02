@@ -1,3 +1,5 @@
+import random as rd 
+
 def inflation(inflate, years, tot):
     tot = (inflate/100) * years
     print ("total inflation amount is",tot,"given", years, "years")
@@ -10,11 +12,30 @@ def converted_vals(org_money, moon, new_tot, currency):
     print("We changed the original value from", org_money, "to", new_tot)
     return (new_tot)
 
+def risky (mi,ma, c =0):
+    #p(getting nothing) = 0.5 and p(getting greater money) = 0.5 
+    c = rd.randint(mi,ma)
+    print(c)
+    if c <=5:
+        return 1
+    else:
+        return 0 
+    
 
-def staircase_A(A): 
-    A = A *1.5 
-   # print("You chose A, the new value is", A)
-    return(A)
+
+
+
+def staircase_A(A, mi = 0, ma = 10, c = 0): 
+    c = rd.randint(mi, ma)
+    if c <= 5:
+        A = A * 1.5
+        #print(c, A)
+        return A
+    else:
+        #print("No")
+        return A 
+
+        
 def staircase_B(B):
     B = B * 0.5
     #print("You chose B, the new value is", B)
@@ -87,3 +108,4 @@ initial31 = persons_choice(initial, 0, 1, 0, 1, 1)
 initial32 = persons_choice(initial, 0, 1, 0, 0, 1)
 
 print(initial1, initial32)
+print("HAHAHA")
