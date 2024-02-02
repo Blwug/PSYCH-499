@@ -12,18 +12,6 @@ def converted_vals(org_money, moon, new_tot, currency):
     print("We changed the original value from", org_money, "to", new_tot)
     return (new_tot)
 
-def risky (mi,ma, c =0):
-    #p(getting nothing) = 0.5 and p(getting greater money) = 0.5 
-    c = rd.randint(mi,ma)
-    print(c)
-    if c <=5:
-        return 1
-    else:
-        return 0 
-    
-
-
-
 
 def staircase_A(A, mi = 0, ma = 10, c = 0): 
     c = rd.randint(mi, ma)
@@ -37,6 +25,7 @@ def staircase_A(A, mi = 0, ma = 10, c = 0):
 
         
 def staircase_B(B):
+    #p(getting money) = 1 
     B = B * 0.5
     #print("You chose B, the new value is", B)
     return (B)
