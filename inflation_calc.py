@@ -16,7 +16,7 @@ def converted_vals(org_money, moon, new_tot, currency):
 def staircase_A(A, mi = 0, ma = 10, c = 0): 
     c = rd.randint(mi, ma)
     if c <= 5:
-        A = A * 1.5
+        A = A + A* 1.5
         #print(c, A)
         return A
     else:
@@ -26,7 +26,7 @@ def staircase_A(A, mi = 0, ma = 10, c = 0):
         
 def staircase_B(B):
     #p(getting money) = 1 
-    B = B * 0.5
+    B = B + B* 0.5
     #print("You chose B, the new value is", B)
     return (B)
 
